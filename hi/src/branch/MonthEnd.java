@@ -74,7 +74,7 @@ public class MonthEnd {
 			
 		
 		}      
-        System.out.println(+mon+"월의말일은"+day+"입니다");
+        System.out.println(mon+"월의말일은"+day+"입니다");
         
         
 }

@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @story :
  * 
  */
-public class Avg2 {
+public class Avg3 {
 	/**
 	 * 클라이언트에서 프로그램 개발 요청이왔습니다. 이름과 국,영,수 세과목점수를 입력받아서 
 	 * [홍길동 : 총점 ***점,평균***점,학점 : f]
@@ -27,7 +27,7 @@ public class Avg2 {
 	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		String name="", result = "";
+		String name="", result = ""; 
 		int kor = 0, eng = 0, math = 0, total = 0, avg = 0;
 		System.out.println("이름을 입력하세요");
 		name = scanner.next();
@@ -53,18 +53,33 @@ public class Avg2 {
         avg = total / 3;
        
         
-        if (avg>=90) {
-			result = "A";
-		} else if(avg>=80) {
-           result = "B"; }
-		else if(avg>=70) {
-	           result = "C"; }
-		else if(avg>=60) {
-	           result = "D"; }
-		else if(avg>=50) {
-	           result = "E"; }
-		else if(avg<50) {
-	           result = "F"; }
+        switch (avg/10) {
+		case 9:
+	      result ="a";  
+	      
+			break;
+		case 8: 
+			result ="b";  
+		
+		break;
+		case 7:
+			result ="c";  
+		
+		break;
+		case 6: 
+			result ="d";  
+		
+		break;
+		case 5: 
+			result ="e";  
+		
+			
+		default:
+		result = "f";
+			break;
+		}
+        
+       
         
         System.out.println("이름" +name+ "총점" +total+ "평균" +avg+"입니다" + result+"학점입니다" );
         
