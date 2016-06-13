@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @file   :OddEven.java
  * @story  :
  
- */
+ 
 public class OddEven {
 	/**
 	 * 개발자님,홀짝 게임하나 만들어 주세요.
@@ -20,11 +20,12 @@ public class OddEven {
 	 * Win 틀리면 LOOSE 가 출력되면 됩니다.
 	 * 
 	 * */
+public class OddEven {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
 		int num=0 , num2=0 , num3=0,usernum=0;
-		String result;
+		String result="";
 				
 		num= random.nextInt(10)+1;
 		
