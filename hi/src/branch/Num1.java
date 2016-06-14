@@ -35,30 +35,7 @@ public class Num1 {
    * =================
    * */
 	public static void main(String[] args) {
-	 Scanner scanner = new Scanner(System.in);
-	 String name1="",name2="",name3="";
-	 int total=0,avg=0,hong=0,kim=0,kimk=0;
-	 System.out.println("이름을 입력하세요");
-		name1 = scanner.next();
-	 System.out.println("평균점수를 입력");
-        avg = scanner.nextInt();
-        System.out.println("이름을 입력하세요");
-        name2 = scanner.next();
-        System.out.println("평균점수를 입력");
-        avg = scanner.nextInt();
-        System.out.println("이름을 입력하세요");
-        name3 = scanner.next();
-        System.out.println("평균점수를 입력");
-        avg = scanner.nextInt();
-		avg=total/3;
-		
-		if (hong>kim&&hong>kimk) {
-			
-		} else {
 
-		}
-        
-	
 	
 	}
 }
