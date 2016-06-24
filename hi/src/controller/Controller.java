@@ -18,6 +18,8 @@ public class Controller {
 		String menu="";
 		Scanner s = new Scanner(System.in);
 		Calc calc = new Calc();
+		Kaup kaup = new Kaup();
+		MonthEnd monthend = new MonthEnd();
 		while (true) {
 			menu = JOptionPane.showInputDialog("1.계산기 2.카우푸 3.년월말 0.종료");
 			switch (menu) {
@@ -27,8 +29,25 @@ public class Controller {
 				System.out.print("두번째숫자 : ");
 				System.out.println(calc.execute(s.nextInt(), s.next(), s.nextInt()));
 				break;
-			case "2":kaup(s);break;
-			case "3":break;
+			case "2":
+				System.out.println("이름?");
+				System.out.println("키?");
+				System.out.println("몸무게?");
+				System.out.println(kaup.execute(s.next(),s.nextDouble(), s.nextDouble()));
+				break;
+			case "3":
+				System.out.println("년 입력?(예)2016  월 입력?(예)2");
+			//	System.out.println(MonthEnd.execute(s.nextInt(),s.nextInt())));
+				System.out.println("년도,월을 입력하세요 : ");
+				
+				/*if(malil==-1){
+					System.out.println("1~12만 가능");
+					break;
+				}else{
+					System.out.println(malil+"일 입니다");
+					break;
+				*/
+				break;
 			case "0":
 				JOptionPane.showConfirmDialog(null, "종료하시겠습니까?");
 				return;

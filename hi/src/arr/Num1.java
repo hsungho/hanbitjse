@@ -3,7 +3,7 @@
  */
 package arr;
 
-import java.util.Scanner;
+;
 
 /**
  * @date : 2016. 6. 14.
@@ -19,17 +19,19 @@ public class Num1 {
 	 * 
 	 */
 
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		int count = 0, max = 0, min = 100;
-		System.out.println("학생수는?");
-		count = scanner.nextInt();
-		int[] score = new int[count];
+	public String execute(int[] score){
+		int  max = 0, min = 100;
+		
 
-		for (int i = 0; i < count; i++) {
-               if (i<0) {
+		for (int i = 0; i < score.length; i++) {
+               if (score[i]>max) {
+            	   max=score[i];
 				
+			}else if(score[i]<min){
+				min = score[i];
 			}
+               
 		}
+		return "최고점 : "+max+"최저점:"+min;
 	}
 }
